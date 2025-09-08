@@ -1,0 +1,22 @@
+body{
+        background-image: url('Sin título (2).png');
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.button1 {
+        background: turquoise;   
+    border: 2px solid black;    
+      padding: 10px 20px; 
+    cursor: pointer;    
+    text-align: left;
+    font-size: 18px;      
+    border-radius: 10px;
+    transition: all 0.3s ease;  
+}
+
+.button1:hover {
+    background: rgb(0, 50, 250); 
+    color: white;                
+    transform: scale(1.05);      
+}
