@@ -88,3 +88,17 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
     border-top: 1px solid #eee;
 }
+
+.back{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #0dd34f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}

@@ -25,7 +25,7 @@ body {
 }
 
 /* BOTONES */
-.button1, .button2, .button3, .button4, .button5 {
+.button1, .button2, .button3, .button4, .button5, .button6 {
     border: 2px solid black;
     padding: 10px 20px;
     border-radius: 5px;
@@ -40,6 +40,7 @@ body {
 .button3 { background-color: rgb(209, 203, 6); }
 .button4 { background-color: rgb(250, 0, 67); }
 .button5 { background-color: rgb(255, 186, 12); }
+.button6 { background-color: rgb(5, 161, 252); }
 
 .footer {
     font-size: 20px;

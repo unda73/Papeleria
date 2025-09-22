@@ -1,0 +1,170 @@
+        body {
+            background-color: rgb(77, 255, 0);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 43px;
+            color: white;
+        }
+        p.subtitulo {
+            text-align: center;
+            font-size: 26px;
+            color: white;
+        }
+        .contenedor {
+            display: flex;         /* coloca la foto y el texto en fila */
+            align-items: center;   /* centra verticalmente */
+            gap: 20px;             /* espacio entre foto y texto */
+            margin: 20px;
+            justify-content: center; /* centra todo en la pantalla */
+        }
+        .foto {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+        }
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .texto {
+            font-size: 20px;
+            max-width: 600px;
+            color: white;
+        }
+        .my-button {
+            background-color: rgb(252, 4, 4);
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .my-button:hover {
+            background-color: green;
+            color: white;
+        }
+
+.my-text {
+  max-width: 350px;   /* limita el ancho */
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  /*margin: 20px auto; */
+  text-align: center; /*las letras*/
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.my-text  h4{
+color:black 
+}
+.my-text p {
+  color: black;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#f3f2ee;
+	color:#000;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #FFF;
+  background-color:#1ab152;
+    
+    animation: shake 1s;
+
+ 
+  animation-iteration-count: infinite;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.facebook-float {
+    bottom: 130px; 
+}
+.instagram-float {
+    bottom: 220px;
+}
+.tiktok-float {
+    bottom: 310px;
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px #08100bfa rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
+}
+@media (max-width: 480px) {
+    .button1 {
+        font-size: 16px;
+        padding: 8px 16px;
+        text-align: center;
+    }
+
+    .float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Cambiar posiciones para que no se sobrepongan */
+    .facebook-float {
+        bottom: 90px;
+        right: 20px;
+    }
+    .instagram-float {
+        bottom: 150px;
+        right: 20px;
+    }
+    .tiktok-float {
+        bottom: 210px;
+        right: 20px;
+    }
+
+    .foto {
+    width: 120%;
+    max-width: 250px; /* nunca será más grande de 250px */
+    aspect-ratio: 1 / 1; /* mantiene forma cuadrada */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    }
+
+
+
+}
