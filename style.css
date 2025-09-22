@@ -1,47 +1,79 @@
-body{
+body {
   margin: 0;
-  height: 100vh;                 /* ocupa toda la pantalla */
+  min-height: 100vh;
   display: flex;
-  justify-content: center;       /* centra horizontal */
-  align-items: center;           /* centra vertical */
-  flex-direction: column;        /* coloca los elementos en columna */
-  background-image: url(Sin\ título\ \(2\).png);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Sin título (2).png');
   background-repeat: no-repeat;
-  background-size: cover;        /* ajusta la imagen al fondo */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .Titulo {
-  text-align: center;
-  font-size: 30px;
-  color: rgb(255, 0, 0);
-   margin-top: 80px;
-}
-
-.titulo1 {
-background: none;
+  margin-top: 50px;
+  color: red;
 }
 
 .titulo1 h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-  color: rgb(0, 0, 0);
-
+  font-size: 40px;
+  margin: 10px 0;
+  color: black;
 }
+
 .titulo1 img {
-  position: relative;
-   top: -50px;
+  width: 250px;
+  height: auto;
+  max-width: 100%;
 }
 
 .my-button {
-    background: turquoise;   
-    border: 2px solid black;    
-    padding: 5px 15px;   
-    cursor: pointer;    
-    text-align: center;
-    font-size: 18px;      
-    border-radius: 10px;
-    transition: all 0.3s ease;  
-      position: relative;
-   top: 150px;
-    
+  background: turquoise;
+  border: 2px solid black;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  transition: all 0.3s ease;
 }
+
+/* ❌ Evita usar h1 dentro de botones */
+.my-button h1 {
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  padding: 20px;
+  color: skyblue;
+  font-size: 18px;
+}
+
+/* 📱 MEDIA QUERY PARA MÓVILES */
+@media (max-width: 768px) {
+  .titulo1 h1 {
+    font-size: 28px;
+  }
+
+  .titulo1 img {
+    width: 180px;
+  }
+
+  .my-button {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+
+  footer {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+}
+
