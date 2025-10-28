@@ -1,12 +1,15 @@
         body {
-            background-color: rgb(77, 255, 0);
+            background-color: rgb(14, 5, 90);
             color: white;
             font-family: Arial, sans-serif;
         }
         h1 {
-            text-align: center;
-            font-size: 43px;
-            color: white;
+  font-size: 3rem;
+  margin-top: 40px;
+  color: #00d4ff;
+  text-align: center;
+  text-shadow: 0 0 10px #00d4ff, 0 0 20px #0099cc;
+  letter-spacing: 2px;
         }
         p.subtitulo {
             text-align: center;
@@ -50,6 +53,43 @@
             background-color: green;
             color: white;
         }
+
+        .bloque-derecha {
+  display: flex;
+  justify-content: flex-end;     /* Centra horizontalmente */
+  align-items: center;           /* Centra verticalmente */
+  flex-direction: row-reverse;   /* 👈 Mueve la imagen al lado derecho */
+  gap: 40px;                     /* Espacio entre imagen y texto */
+  width: 80%;
+  margin: 50px auto;
+  flex-wrap: wrap;               /* Para que sea responsive */
+}
+
+.imagen-lado img {
+  width: 455px;                /* 👈 Ajusta el tamaño aquí */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagen-lado img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 224, 255, 0.8);
+}
+
+.texto-lado {
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  padding: 25px;
+  border-radius: 15px;
+  color: #f5f5f5;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.15);
+}
 
 .my-text {
   max-width: 350px;   /* limita el ancho */
@@ -165,6 +205,12 @@ color:black
     border: 5px solid white;
     }
 
+      .bloque-derecha {
+    flex-direction: column; /* Imagen arriba, texto abajo */
+  }
+  .imagen-lado img {
+    width: 40px;
+  }
 
 
 }
