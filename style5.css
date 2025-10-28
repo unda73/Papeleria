@@ -209,7 +209,7 @@ color:black
     flex-direction: column; /* Imagen arriba, texto abajo */
   }
   .imagen-lado img {
-    width: 40px;
+    width: 400px;
   }
 
 
