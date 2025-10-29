@@ -2,6 +2,16 @@ body{
         background-image: url('Sin título (2).png');
         background-size: cover;
         background-repeat: no-repeat;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.Titulo{
+    font-size: 40px;
+    color: #0099cc;
+    margin-top: 60px;
+      text-shadow: 0 0 10px #00d4ff, 0 0 20px #0099cc;
+  letter-spacing: 2px;
+
 }
 
 .button1 {
@@ -100,7 +110,24 @@ body{
   15% { transform: skewX(15deg); }
   20% { transform: skewX(0deg); }
   100% { transform: skewX(0deg); }
-} 
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    position: absolute;
+    top: 200px;/*es ajustar laposicion vertical*/
+    left: 10px;/*ajustar la posicion horizontal*/
+    max-width: 300px; /* Ancho máximo para que no sea muy grande */
+    padding: 10px 15px;
+    background-color: #0dd34f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
 
 @media (max-width: 480px) {
     .button1 {
@@ -130,20 +157,13 @@ body{
         bottom: 210px;
         right: 20px;
     }
+
+    .contact-info {
+        top: 310px; /* Ajustar la posición vertical */
+        left: 1px;  /* Ajustar la posición horizontal */
+        max-width: 200px; /* Ancho máximo reducido */
+        font-size: 14px; /* Tamaño de fuente reducido */
+        padding: 8px 12px; /* Padding reducido */
+    }
 }
 
-.contact-info {
-    background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
-    position: absolute;
-    top: 200px;/*es ajustar laposicion vertical*/
-    left: 10px;/*ajustar la posicion horizontal*/
-    max-width: 300px; /* Ancho máximo para que no sea muy grande */
-    padding: 10px 15px;
-    background-color: #0dd34f;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    text-decoration: none;
-}
