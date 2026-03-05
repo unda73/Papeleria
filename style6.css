@@ -73,3 +73,24 @@ body {
         font-size: 16px;
         text-decoration: none;
     }
+
+    .llegar{
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.llegar:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.llegar:active{
+    transform: scale(0.95);
+}

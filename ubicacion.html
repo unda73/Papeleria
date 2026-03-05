@@ -21,5 +21,33 @@
       </iframe>
     </div>
   </div>
+    <button class="llegar" onclick="llegar()">🚗 Cómo llegar</button>
+  <script>
+function llegar() {
+
+  if (navigator.geolocation) {
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
+
+      // Coordenadas de tu papelería
+      let destino = "14.911302816142273, -92.25582683508294";
+
+      let url = "https://www.google.com/maps/dir/" + lat + "," + lon + "/" + destino;
+
+      window.open(url, "_blank");
+
+    }, function() {
+      alert("No se pudo obtener tu ubicación.");
+    });
+
+  } else {
+    alert("Tu navegador no permite geolocalización.");
+  }
+
+}
+</script>
 </body>
 </html>
