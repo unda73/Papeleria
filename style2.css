@@ -1,79 +1,561 @@
-body {
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
     margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('Sin título (2).png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.Titulo {
-    font-size: 40px;
-    color: rgb(255, 0, 0);
-    margin-top: 60px;
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    overflow-x: hidden;
+
+    position: relative;
 }
+
+
+/* ================================
+   FONDO AMARILLO
+================================ */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 900px;
+    height: 1100px;
+
+    left: -500px;
+    top: -200px;
+
+    background: #fff200;
+
+    border-radius: 0 0 50% 0;
+
+    z-index: -2;
+
+}
+
+
+/* ================================
+   DECORACIONES
+================================ */
+
+.decoracion {
+
+    position: fixed;
+
+    border-radius: 50%;
+
+    z-index: -1;
+
+}
+
+.decoracion1 {
+
+    width: 120px;
+    height: 120px;
+
+    right: 80px;
+    top: 80px;
+
+    border: 12px solid #ffd000;
+
+}
+
+.decoracion2 {
+
+    width: 180px;
+    height: 180px;
+
+    left: -50px;
+    bottom: -80px;
+
+    background: #1674d1;
+
+}
+
+
+/* ================================
+   CONTENEDOR
+================================ */
+
+.contenedor {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 25px 30px 20px;
+
+    text-align: center;
+
+}
+
+
+/* ================================
+   LOGO
+================================ */
 
 .logo {
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+
 }
 
-/* BOTONES */
-.button1, .button2, .button3, .button4, .button5, .button6, .button7 {
-    border: 2px solid black;
-    padding: 10px 20px;
-    border-radius: 5px;
+.logo:hover {
+
+    transform: scale(1.05) rotate(2deg);
+
+}
+
+
+/* ================================
+   TITULO
+================================ */
+
+.Titulo {
+
+    font-size: 52px;
+
+    font-weight: 900;
+
+    color: #10284a;
+
+    margin-top: 5px;
+
+    letter-spacing: 1px;
+
+}
+
+.Titulo span {
+
+    color: #ed1c35;
+
+}
+
+
+/* ================================
+   SUBTITULO
+================================ */
+
+.subtitulo {
+
     margin-top: 15px;
-    font-size: 18px;
-    cursor: pointer;
-    color: black;
+
+    margin-bottom: 35px;
+
+    font-size: 20px;
+
+    color: #596273;
+
 }
 
-.button1 { background-color: rgb(0, 50, 250); }
-.button2 { background-color: rgb(0, 250, 33); }
-.button3 { background-color: rgb(209, 203, 6); }
-.button4 { background-color: rgb(250, 0, 67); }
-.button5 { background-color: rgb(255, 186, 12); }
-.button6 { background-color: rgb(5, 161, 252); }
-.button7 { background-color: rgb(255, 0, 200); }
+
+/* ================================
+   MENU
+================================ */
+
+.menu {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px 30px;
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+/* ================================
+   TARJETAS
+================================ */
+
+.tarjeta {
+
+    position: relative;
+
+    min-height: 190px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: white;
+
+    cursor: pointer;
+
+    padding: 65px 25px 25px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    transition: all 0.3s ease;
+
+    border-bottom: 8px solid;
+
+}
+
+.tarjeta:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.20);
+
+}
+
+.tarjeta:active {
+
+    transform: scale(0.97);
+
+}
+
+
+/* ================================
+   ICONOS
+================================ */
+
+.icono {
+
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    border-radius: 50%;
+
+    top: -30px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 32px;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* ================================
+   TEXTO TARJETAS
+================================ */
+
+.contenido h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+
+    font-weight: 800;
+
+}
+
+.contenido p {
+
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    color: #4d5560;
+
+}
+
+
+/* ================================
+   COLORES
+================================ */
+
+/* TRÁMITES */
+
+.tramite {
+
+    border-color: #1674d1;
+
+}
+
+.tramite .icono {
+
+    background: #1674d1;
+
+}
+
+.tramite h2 {
+
+    color: #1674d1;
+
+}
+
+
+/* SERVICIOS */
+
+.servicio {
+
+    border-color: #ff8c00;
+
+}
+
+.servicio .icono {
+
+    background: #ff8c00;
+
+}
+
+.servicio h2 {
+
+    color: #ff8c00;
+
+}
+
+
+/* PRODUCTOS */
+
+.productos {
+
+    border-color: #16c63b;
+
+}
+
+.productos .icono {
+
+    background: #16c63b;
+
+}
+
+.productos h2 {
+
+    color: #16c63b;
+
+}
+
+
+/* UBICACIÓN */
+
+.ubicacion {
+
+    border-color: #f5c400;
+
+}
+
+.ubicacion .icono {
+
+    background: #f5c400;
+
+}
+
+.ubicacion h2 {
+
+    color: #e4ae00;
+
+}
+
+
+/* CONTACTO */
+
+.contacto {
+
+    border-color: #ed2671;
+
+}
+
+.contacto .icono {
+
+    background: #ed2671;
+
+}
+
+.contacto h2 {
+
+    color: #ed2671;
+
+}
+
+
+/* CREADOR */
+
+.creador {
+
+    border-color: #1674d1;
+
+}
+
+.creador .icono {
+
+    background: #1674d1;
+
+}
+
+.creador h2 {
+
+    color: #1674d1;
+
+}
+
+
+/* ================================
+   FOOTER
+================================ */
 
 .footer {
-    font-size: 20px;
-    color: skyblue;
-    margin: 50px 0 20px 0;
+
+    margin-top: 45px;
+
+    padding-bottom: 15px;
+
+    color: #555;
+
+    font-size: 16px;
+
 }
 
-/* MEDIA QUERY para pantallas pequeñas */
-@media (max-width: 768px) {
+.footer strong {
+
+    color: #1674d1;
+
+}
+
+.corazon {
+
+    font-size: 30px;
+
+    color: #ed1c35;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* ================================
+   TABLETS
+================================ */
+
+@media (max-width: 900px) {
+
     .Titulo {
-        font-size: 28px;
-        margin-top: 30px;
+
+        font-size: 42px;
+
+    }
+
+    .menu {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* ================================
+   CELULARES
+================================ */
+
+@media (max-width: 600px) {
+
+    body::before {
+
+        width: 500px;
+        height: 500px;
+
+        left: -300px;
+
+    }
+
+    .contenedor {
+
+        padding: 20px 18px;
+
     }
 
     .logo {
-        width: 200px;
+
+        width: 140px;
+
+        height: 140px;
+
     }
 
-    .button1, .button2, .button3, .button4, .button5, .button6, .button7 {
+    .Titulo {
+
+        font-size: 32px;
+
+        line-height: 1.15;
+
+    }
+
+    .subtitulo {
+
         font-size: 16px;
-        padding: 8px 16px;
+
+        margin-bottom: 50px;
+
+    }
+
+    .menu {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+    }
+
+    .tarjeta {
+
+        min-height: 175px;
+
+    }
+
+    .contenido h2 {
+
+        font-size: 25px;
+
+    }
+
+    .contenido p {
+
+        font-size: 16px;
+
     }
 
     .footer {
-        font-size: 16px;
-        margin-top: 30px;
-    }
-}
 
-    .button.disabled {
-      background-color: #ccc;
-      color: #666;
-      cursor: not-allowed;
-      border: 1px solid #aaa;
+        font-size: 14px;
+
+        margin-top: 40px;
+
     }
+
+}

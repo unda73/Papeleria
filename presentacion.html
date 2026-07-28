@@ -1,28 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>¿Qué deseas buscar?</title>
-  <link rel="stylesheet" href="style2.css" />
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Papelería Untrac</title>
+
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-  <img src="Sin título (1) (1).png" alt="Logo de la tienda" class="logo" />
+    <!-- DECORACIÓN -->
+    <div class="decoracion decoracion1"></div>
+    <div class="decoracion decoracion2"></div>
 
-  <h1 class="Titulo">¿QUÉ DESEAS BUSCAR?</h1>
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="contenedor">
 
-  <button class="button button1" onclick="location.href='Tramite.html'">Trámites</button>
-   <button class="button button5" onclick="location.href='Servicio.html'">Servicios</button>
- <button class="button button2" onclick="location.href='MenuProductos.html'">Productos</button>
-  <button class="button button3" onclick="location.href='ubicacion.html'">Ubicación</button>
-  <button class="button button4" onclick="location.href='Contactanos.html'">Contáctanos</button>
-  <button class="button button6" onclick="location.href='https://sergiolopezunda.netlify.app/'">Creador</button>
+        <!-- LOGO -->
+        <img src="Sin título (1) (1).png"
+             alt="Logo de Papelería Untrac"
+             class="logo">
 
-  <div class="footer">
-    <p>© 2026 Papelería Untrac. Todos los derechos reservados.</p>
-  </div>
+        <!-- TITULO -->
+        <h1 class="Titulo">
+            ¿QUÉ DESEAS <span>BUSCAR?</span>
+        </h1>
+
+        <p class="subtitulo">
+            Explora nuestras opciones y encuentra lo que necesitas
+        </p>
+
+        <!-- MENÚ -->
+        <section class="menu">
+
+            <!-- TRÁMITES -->
+            <button class="tarjeta tramite"
+                    onclick="location.href='Tramite.html'">
+
+                <div class="icono">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                </div>
+
+                <div class="contenido">
+                    <h2>Trámites</h2>
+                    <p>Realiza tus trámites de forma rápida y fácil</p>
+                </div>
+
+            </button>
+
+
+            <!-- SERVICIOS -->
+            <button class="tarjeta servicio"
+                    onclick="location.href='Servicio.html'">
+
+                <div class="icono">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+
+                <div class="contenido">
+                    <h2>Servicios</h2>
+                    <p>Conoce todos nuestros servicios disponibles</p>
+                </div>
+
+            </button>
+
+
+            <!-- PRODUCTOS -->
+            <button class="tarjeta productos"
+                    onclick="location.href='MenuProductos.html'">
+
+                <div class="icono">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+                <div class="contenido">
+                    <h2>Productos</h2>
+                    <p>Descubre nuestra variedad de productos</p>
+                </div>
+
+            </button>
+
+
+            <!-- UBICACIÓN -->
+            <button class="tarjeta ubicacion"
+                    onclick="location.href='ubicacion.html'">
+
+                <div class="icono">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="contenido">
+                    <h2>Ubicación</h2>
+                    <p>Encuéntranos fácilmente y visítanos</p>
+                </div>
+
+            </button>
+
+
+            <!-- CONTACTO -->
+            <button class="tarjeta contacto"
+                    onclick="location.href='Contactanos.html'">
+
+                <div class="icono">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="contenido">
+                    <h2>Contáctanos</h2>
+                    <p>Estamos aquí para ayudarte</p>
+                </div>
+
+            </button>
+
+
+            <!-- CREADOR -->
+            <button class="tarjeta creador"
+                    onclick="location.href='https://sergiolopezunda.netlify.app/'">
+
+                <div class="icono">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="contenido">
+                    <h2>Creador</h2>
+                    <p>Conoce al creador de Papelería Untrac</p>
+                </div>
+
+            </button>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+
+            <div class="corazon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+            <p>
+                © 2026 <strong>Papelería Untrac</strong>.
+                Todos los derechos reservados.
+            </p>
+
+        </footer>
+
+    </main>
 
 </body>
 </html>
