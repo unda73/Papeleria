@@ -1,66 +1,307 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trámites</title>
-  <link rel="stylesheet" href="style3.css" />
-</head>
-<body>
-  <h1 class="Titulo">TRÁMITES</h1>
-  <h2 class="subtitulo">Tipos de Trámites</h2>
-  <button class="back" onclick="window.location.href='presentacion.html'">Regresar</button>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="contenedor-tramites">
-    <div class="card">
-      <img src="Imagenes/Actas-de-nacimiento.jpg" alt="Acta de Nacimiento" />
-      <p>Acta de Nacimiento</p>
+  <title>Trámites | Papelería UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <a class="marca" href="presentacion.html" aria-label="UNTRAC, menú principal">
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
+
+    <a class="regresar" href="presentacion.html">
+      <span aria-hidden="true">←</span>
+      Regresar al menú
+    </a>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">TRÁMITES Y DOCUMENTOS</span>
+
+      <h1 id="titulo">
+        Te ayudamos con <span>tus pendientes.</span>
+      </h1>
+
+      <p>
+        Explora las opciones disponibles y contáctanos
+        para conocer los requisitos y el costo.
+      </p>
+    </section>
+
+    <div class="encabezado-catalogo">
+      <h2>¿Qué trámite necesitas?</h2>
+      <span>11 opciones disponibles</span>
     </div>
-        <div class="card">
-      <img src="Imagenes/Captura desde 2025-09-25 10-24-21.png" alt="Acta de Matrimonio" />
-      <p>Acta de Matrimonio</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/curp.jpeg" alt="CURP" />
-      <p>CURP</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/thumb_1200_1553.png" alt="Constancia de Situación Fiscal" />
-      <p>Constancia Fiscal</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Captura desde 2025-09-22 00-46-08.png" alt="Cita SAT" />
-      <p>Cita SAT</p>
-    </div>
-        <div class="card">
-      <img src="Imagenes/recibo.jpg" alt="Recibo de Luz" />
-      <p>Recibo de Luz</p>
-    </div>
-    <div class="card">
-        <img src="Imagenes/Captura desde 2025-09-22 00-44-45.png" alt="Cita INE" />
-        <p>Cita INE</p>
-       </div>
-          <div class="card">
-        <img src="Imagenes/nss.png" alt="Numero de Seguro Social(nss)" />
-        <p>Numero de Seguro Social(nss)</p>
-       </div>
-                 <div class="card">
-        <img src="Imagenes/VIGENCIA.jpeg" alt="Vigencia de Derecho (IMMS)" />
-        <p>Vigencia de Derecho (IMMS)</p>
-       </div>
-              <div class="card">
-           <img src="Imagenes/ico-impresion-lg.png" alt="Copias e Impresiones" />
-           <p>Copias e Impresiones</p>
-              </div>
-              <div class="card">
-           <img src="Imagenes/curpconchip.jpg" alt="Vincular tu Numero con tu CURP" />
-           <p>Vincular tu Numero con tu CURP</p>
-              </div>
-       </div>
-  <H1 class="parrafo">Contáctanos para más información</H1>
- <div class="footer">
-    <p>© 2026 Papelería Untrac. Todos los derechos reservados.</p>
-  </div>
+
+    <section class="catalogo" aria-label="Catálogo de trámites">
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Actas-de-nacimiento.jpg"
+            alt="Ejemplo de acta de nacimiento"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">REGISTRO CIVIL</span>
+          <h3>Acta de nacimiento</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre acta de nacimiento</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Captura desde 2025-09-25 10-24-21.png"
+            alt="Ejemplo de acta de matrimonio"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">REGISTRO CIVIL</span>
+          <h3>Acta de matrimonio</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre acta de matrimonio</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/curp.jpeg"
+            alt="Ejemplo de constancia de CURP"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">IDENTIDAD</span>
+          <h3>CURP</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre CURP</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/thumb_1200_1553.png"
+            alt="Ejemplo de constancia de situación fiscal"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">DOCUMENTOS FISCALES</span>
+          <h3>Constancia de situación fiscal</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre constancia de situación fiscal</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Captura desde 2025-09-22 00-46-08.png"
+            alt="Imagen de referencia para cita SAT"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">CITAS</span>
+          <h3>Cita SAT</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre cita SAT</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/recibo.jpg"
+            alt="Ejemplo de recibo de luz"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">RECIBOS</span>
+          <h3>Recibo de luz</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre recibo de luz</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Captura desde 2025-09-22 00-44-45.png"
+            alt="Imagen de referencia para cita INE"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">CITAS</span>
+          <h3>Cita INE</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre cita INE</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/nss.png"
+            alt="Imagen de referencia del número de seguridad social"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">SEGURIDAD SOCIAL</span>
+          <h3>Número de Seguridad Social (NSS)</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre número de seguridad social</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/VIGENCIA.jpeg"
+            alt="Ejemplo de constancia de vigencia de derechos"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">SEGURIDAD SOCIAL</span>
+          <h3>Vigencia de derechos (IMSS)</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre vigencia de derechos del IMSS</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/ico-impresion-lg.png"
+            alt="Servicio de copias e impresiones"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">IMPRESIÓN</span>
+          <h3>Copias e impresiones</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre copias e impresiones</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/curpconchip.jpg"
+            alt="Imagen de referencia para vinculación de número con CURP"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">TELEFONÍA</span>
+          <h3>Vinculación de número con CURP</h3>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar información
+            <span class="sr-only">sobre vinculación de número con CURP</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <h2 id="titulo-ayuda">¿No encuentras lo que buscas?</h2>
+        <p>Cuéntanos qué necesitas y consulta cómo podemos ayudarte.</p>
+      </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

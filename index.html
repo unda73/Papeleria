@@ -1,62 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PAPELERÍA UNTRAC</title>
-  <link rel="icon" type="image/png" href="Sin título (1) (1).png" />
-  <link rel="stylesheet" href="style.css" />
-   
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LN00ZD0G6E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'G-LN00ZD0G6E');
-</script>
+  <title>Papelería UNTRAC | Bienvenido</title>
+
+  <meta
+    name="description"
+    content="Conoce los productos y servicios de Papelería UNTRAC: artículos escolares, impresiones, copias y elaboración de documentos."
+  >
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LN00ZD0G6E">
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag("js", new Date());
+    gtag("config", "G-LN00ZD0G6E");
+  </script>
 </head>
-<script>
-function cerrarAnuncio(){
-    document.getElementById("modalAnuncio").style.display = "none";
-}
-</script>
+
 <body>
 
-<div id="modalAnuncio" class="modal">
-  
-  <div class="contenido-anuncio">
-    
-   
-    <span class="cerrar" onclick="cerrarAnuncio()">✖</span>
+  <header class="encabezado">
+    <a class="marca" href="presentacion.html">
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
 
-    
-   <div class="marca-anuncio">
-    <img src="Sin título (1) (1).png" class="logo-anuncio">
-    <span class="texto-marca">Papelería UNTRAC</span>
-</div>
+    <span class="ubicacion">Tapachula, Chiapas</span>
+  </header>
 
- 
-    <h3>¡Bienvenido a nuestra Pagina Web!</h3>
-    <p>Explora nuestros servicios y productos. ¡Haz clic en "Entrar" para comenzar!</p>
+  <main id="contenido" class="principal">
 
+    <section class="bienvenida" aria-labelledby="titulo">
 
-  </div>
+      <div class="informacion">
+        <span class="etiqueta">
+          BIENVENIDO A TU PAPELERÍA
+        </span>
 
-</div>
-  <div class="Titulo">
-    <div class="titulo1">
-      <img src="Sin título (1) (1).png" alt="Logo de la tienda" />
-      <h1>PAPELERÍA UNTRAC</h1>
-    </div>
-    <p>Bienvenido al Sitio Web de la Papelería UNTRAC</p>
-    <p>Donde podrás encontrar todos los servicios que ofrecemos</p>
-  </div>
+        <h1 id="titulo">
+          Tus ideas empiezan<br>
+          con una <span>hoja en blanco.</span>
+        </h1>
 
-  <button class="my-button" onclick="location.href='presentacion.html'">Entrar</button>
+        <p class="descripcion">
+          En Papelería UNTRAC te ayudamos con tus tareas,
+          proyectos y pendientes del día.
+        </p>
 
-  <footer>
-    <p>© 2026 Papelería UNTRAC. Todos los derechos reservados.</p>
+        <p class="descripcion-secundaria">
+          Descubre nuestros artículos escolares, productos
+          de oficina y servicios de impresión y documentos.
+        </p>
+
+        <a class="boton-principal" href="presentacion.html">
+          Explorar productos y servicios
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <span class="mensaje-apoyo">
+          Gracias por apoyar a tu negocio local.
+        </span>
+      </div>
+
+      <div class="presentacion-marca">
+        <div class="tarjeta-logo">
+
+          <span class="tarjeta-etiqueta">
+            PARA LA ESCUELA, OFICINA Y MÁS
+          </span>
+
+          <img
+            class="logo"
+            src="Sin título (1) (1).png"
+            alt="Logo de Papelería UNTRAC"
+          >
+
+          <div class="tarjeta-texto">
+            <h2>Papelería UNTRAC</h2>
+            <p>Un espacio para tus ideas y proyectos.</p>
+          </div>
+
+          <div class="muestras-color" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="servicios" aria-label="Servicios destacados">
+
+      <article class="servicio">
+        <span class="servicio-numero" aria-hidden="true">01</span>
+        <div>
+          <h2>Copias e impresiones</h2>
+          <p>Tus trabajos y documentos en papel.</p>
+        </div>
+      </article>
+
+      <article class="servicio">
+        <span class="servicio-numero" aria-hidden="true">02</span>
+        <div>
+          <h2>Artículos escolares</h2>
+          <p>Lo esencial para tus clases y tareas.</p>
+        </div>
+      </article>
+
+      <article class="servicio">
+        <span class="servicio-numero" aria-hidden="true">03</span>
+        <div>
+          <h2>Elaboración de documentos</h2>
+          <p>Apoyo con tus escritos y trabajos en Word.</p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>

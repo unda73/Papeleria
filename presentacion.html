@@ -1,158 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Papelería Untrac</title>
+  <title>Productos y servicios | Papelería UNTRAC</title>
 
-    <link rel="stylesheet" href="style2.css">
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
 
-    <!-- Iconos -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
 
-    <!-- DECORACIÓN -->
-    <div class="decoracion decoracion1"></div>
-    <div class="decoracion decoracion2"></div>
+  <header class="encabezado">
+    <div class="marca">
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </div>
 
-    <!-- CONTENEDOR PRINCIPAL -->
-    <main class="contenedor">
+    <a class="boton-contacto" href="Contactanos.html">
+      ¿Necesitas ayuda?
+      <span aria-hidden="true">↗</span>
+    </a>
+  </header>
 
-        <!-- LOGO -->
-        <img src="Sin título (1) (1).png"
-             alt="Logo de Papelería Untrac"
-             class="logo">
+  <main class="contenedor">
 
-        <!-- TITULO -->
-        <h1 class="Titulo">
-            ¿QUÉ DESEAS <span>BUSCAR?</span>
+    <section class="introduccion" aria-labelledby="titulo">
+      <div class="introduccion-texto">
+        <span class="etiqueta">ESTAMOS PARA AYUDARTE</span>
+
+        <h1 id="titulo">
+          ¿Qué necesitas <span>hoy?</span>
         </h1>
 
-        <p class="subtitulo">
-            Explora nuestras opciones y encuentra lo que necesitas
+        <p>
+          Desde tus útiles escolares hasta tus documentos.
+          Elige una opción para comenzar.
         </p>
+      </div>
 
-        <!-- MENÚ -->
-        <section class="menu">
+      <div class="logo-contenedor">
+        <img
+          src="Sin título (1) (1).png"
+          alt="Papelería UNTRAC"
+          class="logo"
+        >
+      </div>
+    </section>
 
-            <!-- TRÁMITES -->
-            <button class="tarjeta tramite"
-                    onclick="location.href='Tramite.html'">
+    <nav class="menu" aria-label="Productos y servicios">
 
-                <div class="icono">
-                    <i class="fa-solid fa-clipboard-list"></i>
-                </div>
+      <!-- TRÁMITES -->
+      <a class="tarjeta tramite" href="Tramite.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="5" y="5" width="14" height="16" rx="2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 12h6M9 16h6"/>
+            </svg>
+          </span>
 
-                <div class="contenido">
-                    <h2>Trámites</h2>
-                    <p>Realiza tus trámites de forma rápida y fácil</p>
-                </div>
+          <span class="numero" aria-hidden="true">01</span>
+        </div>
 
-            </button>
+        <h2>Trámites</h2>
+        <p>Consulta las opciones de apoyo para tus trámites y citas.</p>
 
+        <span class="tarjeta-accion">
+          Consultar trámites
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
 
-            <!-- SERVICIOS -->
-            <button class="tarjeta servicio"
-                    onclick="location.href='Servicio.html'">
+      <!-- SERVICIOS -->
+      <a class="tarjeta servicio" href="Servicio.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 8V3h10v5"/>
+              <path d="M7 17H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-3"/>
+              <path d="M7 14h10v7H7zM17 11h1"/>
+            </svg>
+          </span>
 
-                <div class="icono">
-                    <i class="fa-solid fa-gear"></i>
-                </div>
+          <span class="numero" aria-hidden="true">02</span>
+        </div>
 
-                <div class="contenido">
-                    <h2>Servicios</h2>
-                    <p>Conoce todos nuestros servicios disponibles</p>
-                </div>
+        <h2>Servicios</h2>
+        <p>Copias, impresiones y elaboración de documentos para tus pendientes.</p>
 
-            </button>
+        <span class="tarjeta-accion">
+          Conocer servicios
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
 
+      <!-- PRODUCTOS -->
+      <a class="tarjeta productos" href="MenuProductos.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 7h14l1 14H4L5 7Z"/>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+            </svg>
+          </span>
 
-            <!-- PRODUCTOS -->
-            <button class="tarjeta productos"
-                    onclick="location.href='MenuProductos.html'">
+          <span class="numero" aria-hidden="true">03</span>
+        </div>
 
-                <div class="icono">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
+        <h2>Productos</h2>
+        <p>Encuentra artículos para la escuela, la oficina y tus proyectos.</p>
 
-                <div class="contenido">
-                    <h2>Productos</h2>
-                    <p>Descubre nuestra variedad de productos</p>
-                </div>
+        <span class="tarjeta-accion">
+          Explorar productos
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
 
-            </button>
+      <!-- UBICACIÓN -->
+      <a class="tarjeta ubicacion" href="ubicacion.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+          </span>
 
+          <span class="numero" aria-hidden="true">04</span>
+        </div>
 
-            <!-- UBICACIÓN -->
-            <button class="tarjeta ubicacion"
-                    onclick="location.href='ubicacion.html'">
+        <h2>Ubicación</h2>
+        <p>Consulta dónde estamos y cómo llegar a nuestra papelería.</p>
 
-                <div class="icono">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
+        <span class="tarjeta-accion">
+          Ver ubicación
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
 
-                <div class="contenido">
-                    <h2>Ubicación</h2>
-                    <p>Encuéntranos fácilmente y visítanos</p>
-                </div>
+      <!-- CONTACTO -->
+      <a class="tarjeta contacto" href="Contactanos.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-2 2v-9.5A9.5 9.5 0 0 1 11.5 3h1a8.5 8.5 0 0 1 8.5 8.5Z"/>
+              <path d="M7 10h9M7 14h6"/>
+            </svg>
+          </span>
 
-            </button>
+          <span class="numero" aria-hidden="true">05</span>
+        </div>
 
+        <h2>Contáctanos</h2>
+        <p>Pregunta por un producto o cuéntanos en qué podemos ayudarte.</p>
 
-            <!-- CONTACTO -->
-            <button class="tarjeta contacto"
-                    onclick="location.href='Contactanos.html'">
+        <span class="tarjeta-accion">
+          Ver formas de contacto
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
 
-                <div class="icono">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
+      <!-- CREADOR -->
+      <a
+        class="tarjeta creador"
+        href="https://sergiolopezunda.netlify.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>
+            </svg>
+          </span>
 
-                <div class="contenido">
-                    <h2>Contáctanos</h2>
-                    <p>Estamos aquí para ayudarte</p>
-                </div>
+          <span class="numero" aria-hidden="true">06</span>
+        </div>
 
-            </button>
+        <h2>Creador del sitio</h2>
+        <p>Conoce a quien desarrolló esta página y descubre sus proyectos.</p>
 
+        <span class="tarjeta-accion">
+          Ver portafolio
+          <span class="sr-only"> (abre en otra pestaña)</span>
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
 
-            <!-- CREADOR -->
-            <button class="tarjeta creador"
-                    onclick="location.href='https://sergiolopezunda.netlify.app/'">
+    </nav>
 
-                <div class="icono">
-                    <i class="fa-solid fa-user"></i>
-                </div>
+    <div class="nota">
+      <span class="punto" aria-hidden="true"></span>
+      Gracias por el apoyo.
+    </div>
 
-                <div class="contenido">
-                    <h2>Creador</h2>
-                    <p>Creditos al creador de la Pagina Web</p>
-                </div>
+  </main>
 
-            </button>
-
-        </section>
-
-
-        <!-- FOOTER -->
-        <footer class="footer">
-
-            <div class="corazon">
-                <i class="fa-regular fa-heart"></i>
-            </div>
-
-            <p>
-                © 2026 <strong>Papelería Untrac</strong>.
-                Todos los derechos reservados.
-            </p>
-
-        </footer>
-
-    </main>
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

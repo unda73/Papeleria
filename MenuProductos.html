@@ -1,25 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MenuProductos</title>
-    <link rel="stylesheet" href="style9.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Productos | Papelería UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style9.css">
 </head>
+
 <body>
-      <img src="Sin título (1) (1).png" alt="Logo de la tienda" class="logo" />
-       <button class="back" onclick="window.location.href='presentacion.html'">Regresar</button>
 
-  <h1 class="Titulo">¿QUÉ PRODUCTO DESEAS?</h1>
+  <header class="encabezado">
+    <a class="marca" href="presentacion.html" aria-label="UNTRAC, menú principal">
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
 
-  <button class="button button1" onclick="location.href='Producto.html'">Papeleria</button>
-   <button class="button button5" onclick="location.href='Fritura.html'">Frituras o Gaseosas</button>
-  <button class="button button3" onclick="location.href='CosasdeOficina.html'">Cosas De Oficinas</button>
-  <button class="button button4" onclick="location.href=''">Dulces</button>
+    <a class="regresar" href="presentacion.html">
+      <span aria-hidden="true">←</span>
+      Regresar al menú
+    </a>
+  </header>
 
-  <div class="footer">
-    <p>© 2026 Papelería Untrac. Todos los derechos reservados.</p>
-  </div>
+  <main class="contenedor">
+
+    <section class="introduccion" aria-labelledby="titulo">
+      <div class="introduccion-texto">
+        <span class="etiqueta">NUESTROS PRODUCTOS</span>
+
+        <h1 id="titulo">
+          Encuentra lo que <span>necesitas.</span>
+        </h1>
+
+        <p>
+          Para tus clases, tu oficina o un pequeño antojo.
+          Elige una categoría y descubre nuestros productos.
+        </p>
+      </div>
+
+      <div class="logo-contenedor">
+        <img
+          src="Sin título (1) (1).png"
+          alt="Papelería UNTRAC"
+          class="logo"
+        >
+      </div>
+    </section>
+
+    <h2 class="titulo-categorias">Explora por categoría</h2>
+
+    <section class="categorias" aria-label="Categorías de productos">
+
+      <!-- PAPELERÍA -->
+      <a class="tarjeta papeleria" href="Producto.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="5" y="3" width="15" height="18" rx="2"/>
+              <path d="M9 3v18M3 7h4M3 12h4M3 17h4M12 8h5M12 12h5"/>
+            </svg>
+          </span>
+
+          <span class="numero" aria-hidden="true">01</span>
+        </div>
+
+        <h3>Papelería</h3>
+        <p>
+          Artículos escolares y materiales para tus tareas,
+          apuntes y proyectos.
+        </p>
+
+        <span class="tarjeta-accion">
+          Ver productos
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
+
+      <!-- FRITURAS Y REFRESCOS -->
+      <a class="tarjeta frituras" href="Fritura.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M5 8h14l-2 13H7L5 8ZM4 8h16M12 8l2-5h4"/>
+              <path d="M9 12v5M15 12v5"/>
+            </svg>
+          </span>
+
+          <span class="numero" aria-hidden="true">02</span>
+        </div>
+
+        <h3>Frituras y refrescos</h3>
+        <p>
+          Un antojo para tu descanso y algo refrescante
+          para acompañar tu día.
+        </p>
+
+        <span class="tarjeta-accion">
+          Ver productos
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
+
+      <!-- OFICINA -->
+      <a class="tarjeta oficina" href="CosasdeOficina.html">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/>
+              <path d="M3 10h18"/>
+            </svg>
+          </span>
+
+          <span class="numero" aria-hidden="true">03</span>
+        </div>
+
+        <h3>Artículos de oficina</h3>
+        <p>
+          Organiza tus documentos y equipa tu espacio
+          de estudio o trabajo.
+        </p>
+
+        <span class="tarjeta-accion">
+          Ver productos
+          <span class="flecha" aria-hidden="true">↗</span>
+        </span>
+      </a>
+
+      <!-- DULCES: SIN ENLACE HASTA TENER SU PÁGINA -->
+      <article class="tarjeta dulces">
+        <div class="tarjeta-superior">
+          <span class="icono" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <rect x="7" y="7" width="10" height="10" rx="3"/>
+              <path d="m7 9-5-3v12l5-3M17 9l5-3v12l-5-3M10 8l4 8"/>
+            </svg>
+          </span>
+
+          <span class="estado">Próximamente</span>
+        </div>
+
+        <h3>Dulces</h3>
+        <p>
+          Un toque dulce para tu día.
+          Pronto podrás explorar esta categoría.
+        </p>
+
+        <span class="tarjeta-accion pendiente">
+          Catálogo en preparación
+        </span>
+      </article>
+
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <h2 id="titulo-ayuda">¿Buscas algún producto en especial?</h2>
+        <p>Pregúntanos por su precio y disponibilidad.</p>
+      </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

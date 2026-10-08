@@ -1,117 +1,499 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frituras</title>
-  <link rel="stylesheet" href="style3.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frituras, bebidas y galletas | UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <!-- Mismo CSS que la página de Trámites -->
+  <link rel="stylesheet" href="style3.css">
+
+  <!-- Ajustes exclusivos de esta página -->
+  <style>
+    .pagina-frituras .navegacion-categorias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .pagina-frituras .navegacion-categorias a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 18px;
+      background: #ffffff;
+      border: 1px solid #e2e6ef;
+      border-radius: 100px;
+      color: #2855d9;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .pagina-frituras .seccion-productos {
+      margin-bottom: 38px;
+      scroll-margin-top: 24px;
+    }
+
+    .pagina-frituras .catalogo {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .pagina-frituras .imagen-contenedor {
+      height: 210px;
+    }
+
+    .pagina-frituras .precio {
+      display: flex;
+      align-items: baseline;
+      gap: 7px;
+      margin: auto 0 0;
+      padding-top: 15px;
+      border-top: 1px solid #e2e6ef;
+      color: #18243b;
+    }
+
+    .pagina-frituras .precio strong {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.7px;
+    }
+
+    .pagina-frituras .precio span {
+      color: #5b667b;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    @media (hover: hover) {
+      .pagina-frituras .navegacion-categorias a:hover {
+        background: #edf2fc;
+        border-color: #b6c8f5;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .pagina-frituras .catalogo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 540px) {
+      .pagina-frituras .catalogo {
+        gap: 12px;
+      }
+
+      .pagina-frituras .imagen-contenedor {
+        height: 150px;
+        margin: 8px 8px 0;
+        padding: 10px;
+      }
+
+      .pagina-frituras .tarjeta-contenido {
+        padding: 16px 12px;
+      }
+
+      .pagina-frituras .tarjeta h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .pagina-frituras .categoria {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+      }
+
+      .pagina-frituras .precio {
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .pagina-frituras .precio strong {
+        font-size: 23px;
+      }
+
+      .pagina-frituras .navegacion-categorias {
+        gap: 8px;
+      }
+
+      .pagina-frituras .navegacion-categorias a {
+        padding: 10px 14px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .pagina-frituras .catalogo {
+        grid-template-columns: 1fr;
+      }
+
+      .pagina-frituras .imagen-contenedor {
+        height: 200px;
+      }
+
+      .pagina-frituras .encabezado {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 </head>
-<body>
-  <h1 class="Titulo">Frituras y Gaseosas</h1>
-  <h2 class="subtitulo">Tipos de Frituras</h2>
-  <button class="back" onclick="window.location.href='MenuProductos'">Regresar</button>
 
-  <div class="contenedor-tramites">
-    <div class="card">
-      <img src="Imagenes/chetos.png" alt="Chettos" />
-      <p>Chettos</p>
-      <button class="button5">15 pesos</button>
-    </div>
-        <div class="card">
-      <img src="Imagenes/Doritos.png" alt="Doritos" />
-      <p>Doritos</p>
-      <button class="button5">15 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Ruffles.png" alt="Ruffles" />
-      <p>Ruffles</p>
-      <button>14 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Tostitos.png" alt="Tostitos" /> 
-      <p>Tostitos</p>
-      <button>15 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/rANV.png" alt="Rancheritos" />
-      <p>Rancheritos</p>
-      <button>15 pesos</button>
-    </div>
-    <div class="card">
-        <img src="Imagenes/PapasSQ.png" alt="Papas" />
-        <p>Papas Sabritas</p>
-        <button>15 pesos</button>
-       </div>
-       </div>
+<body class="pagina-frituras">
 
+  <header class="encabezado">
+    <a
+      class="marca"
+      href="presentacion.html"
+      aria-label="UNTRAC, menú principal"
+    >
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
 
+    <a class="regresar" href="MenuProductos.html">
+      <span aria-hidden="true">←</span>
+      Ver categorías
+    </a>
+  </header>
 
-       <h1 class="subtitulo">Tipos de Gaseosas</h1>
-       <div class="contenedor-tramites">
-    <div class="card">
-      <img src="Imagenes/Coca.png" alt="Coca" />
-      <p>Coca-Cola 600ml</p>
-      <button>22 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Agua.png" alt="Agua" />
-      <p>Agua de 600ml</p>
-      <button>10 pesos</button>
-    </div>
+  <main class="contenedor">
 
-        <div class="card">
-      <img src="Imagenes/Peñiafiel.png" alt="Peñiafiel" />
-      <p>Peñiafiel</p>
-      <button>22 pesos</button>
-    </div>
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">FRITURAS, BEBIDAS Y GALLETAS</span>
 
-        <div class="card">
-      <img src="Imagenes/PeñiafielTwits.png" alt="Peñiafiel Twits" />
-      <p>Peñiafiel Twits</p>
-      <button>22 pesos</button>
-    </div>
+      <h1 id="titulo">
+        Un descanso con <span>tu antojo favorito.</span>
+      </h1>
 
-      <div class="card">
-      <img src="Imagenes/Coca3lt.png" alt="Coca Coca 3LT" />
-      <p>Coca Cola 3LT</p>
-      <button>52 pesos</button>
-    </div>
-       </div>
+      <p>
+        Explora nuestras frituras, bebidas y galletas.
+        Todos los precios están expresados en pesos mexicanos.
+      </p>
+    </section>
 
+    <nav
+      class="navegacion-categorias"
+      aria-label="Categorías de alimentos y bebidas"
+    >
+      <a href="#frituras">Frituras</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#galletas">Galletas</a>
+    </nav>
 
-       <h1 class="subtitulo">Gallletas</h1>
-       <div class="contenedor-tramites">
-      <div class="card">
-        <img src="Imagenes/Barrita.png" alt="Barritas" />
-        <p>Barrita de Piña</p>
-        <button>15 pesos</button>
-       </div> 
-
-        <div class="card">
-        <img src="Imagenes/EmperadorNoc.png" alt="Emperador de Nocturno" />
-        <p>Emperador Nocturno</p>
-        <button>15 pesos</button>
-       </div> 
-
-        <div class="card">
-        <img src="Imagenes/Cremax.png" alt="Cremax" />
-        <p>Cremax Chocolate o Fresa</p>
-        <button>15 pesos</button>
-       </div>
-       
-             <div class="card">
-        <img src="Imagenes/sauris.png" alt="Emperador" />
-        <p>Suaris</p>
-        <button>5 pesos</button>
-       </div> 
+    <!-- FRITURAS -->
+    <section
+      id="frituras"
+      class="seccion-productos"
+      aria-labelledby="titulo-frituras"
+    >
+      <div class="encabezado-catalogo">
+        <h2 id="titulo-frituras">Frituras</h2>
+        <span>6 productos</span>
       </div>
-       
 
+      <div class="catalogo">
 
-      <h1 class="parrafo">Contáctanos para más información</h1>
-      <div class="footer">
-        <p>© 2025 Papelería Untrac. Todos los derechos reservados.</p>
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/chetos.png"
+              alt="Cheetos"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">FRITURAS</span>
+            <h3>Cheetos</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Doritos.png"
+              alt="Doritos"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">FRITURAS</span>
+            <h3>Doritos</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Ruffles.png"
+              alt="Ruffles"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">FRITURAS</span>
+            <h3>Ruffles</h3>
+            <p class="precio"><strong>$14</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Tostitos.png"
+              alt="Tostitos"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">FRITURAS</span>
+            <h3>Tostitos</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/rANV.png"
+              alt="Rancheritos"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">FRITURAS</span>
+            <h3>Rancheritos</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/PapasSQ.png"
+              alt="Papas Sabritas"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">FRITURAS</span>
+            <h3>Papas Sabritas</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
       </div>
+    </section>
+
+    <!-- BEBIDAS -->
+    <section
+      id="bebidas"
+      class="seccion-productos"
+      aria-labelledby="titulo-bebidas"
+    >
+      <div class="encabezado-catalogo">
+        <h2 id="titulo-bebidas">Bebidas</h2>
+        <span>5 productos</span>
+      </div>
+
+      <div class="catalogo">
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Coca.png"
+              alt="Coca-Cola de 600 ml"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">REFRESCOS</span>
+            <h3>Coca-Cola 600 ml</h3>
+            <p class="precio"><strong>$22</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Agua.png"
+              alt="Agua de 600 ml"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">AGUA</span>
+            <h3>Agua 600 ml</h3>
+            <p class="precio"><strong>$10</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Peñiafiel.png"
+              alt="Peñafiel"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">BEBIDAS</span>
+            <h3>Peñafiel</h3>
+            <p class="precio"><strong>$22</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/PeñiafielTwits.png"
+              alt="Peñafiel Twist"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">BEBIDAS</span>
+            <h3>Peñafiel Twist</h3>
+            <p class="precio"><strong>$22</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Coca3lt.png"
+              alt="Coca-Cola de 3 litros"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">REFRESCOS</span>
+            <h3>Coca-Cola 3 L</h3>
+            <p class="precio"><strong>$52</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GALLETAS -->
+    <section
+      id="galletas"
+      class="seccion-productos"
+      aria-labelledby="titulo-galletas"
+    >
+      <div class="encabezado-catalogo">
+        <h2 id="titulo-galletas">Galletas</h2>
+        <span>4 productos</span>
+      </div>
+
+      <div class="catalogo">
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Barrita.png"
+              alt="Barrita de piña"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">GALLETAS</span>
+            <h3>Barrita de piña</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/EmperadorNoc.png"
+              alt="Emperador Nocturno"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">GALLETAS</span>
+            <h3>Emperador Nocturno</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/Cremax.png"
+              alt="Cremax de chocolate o fresa"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">GALLETAS</span>
+            <h3>Cremax chocolate o fresa</h3>
+            <p class="precio"><strong>$15</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+        <article class="tarjeta">
+          <div class="imagen-contenedor">
+            <img
+              src="Imagenes/sauris.png"
+              alt="Suaris"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="tarjeta-contenido">
+            <span class="categoria">GALLETAS</span>
+            <h3>Suaris</h3>
+            <p class="precio"><strong>$5</strong> <span>MXN</span></p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <h2 id="titulo-ayuda">¿Se te antojó algo?</h2>
+        <p>Contáctanos para consultar sabores y disponibilidad.</p>
+      </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

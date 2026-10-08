@@ -1,57 +1,293 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Frituras</title>
-  <link rel="stylesheet" href="style3.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Artículos de oficina | Papelería UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style3.css">
+
+  <!-- Ajustes exclusivos del catálogo de oficina -->
+  <style>
+    .pagina-oficina .precio {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: auto 0 0;
+      padding-top: 15px;
+      border-top: 1px solid #e2e6ef;
+      color: #18243b;
+    }
+
+    .pagina-oficina .precio strong {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.7px;
+    }
+
+    .pagina-oficina .precio span {
+      color: #5b667b;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 540px) {
+      .pagina-oficina .catalogo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .pagina-oficina .imagen-contenedor {
+        height: 150px;
+        margin: 8px 8px 0;
+        padding: 10px;
+      }
+
+      .pagina-oficina .tarjeta-contenido {
+        padding: 16px 12px;
+      }
+
+      .pagina-oficina .categoria {
+        font-size: 8px;
+        letter-spacing: 0.4px;
+      }
+
+      .pagina-oficina .tarjeta h3 {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .pagina-oficina .precio strong {
+        font-size: 23px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .pagina-oficina .catalogo {
+        grid-template-columns: 1fr;
+      }
+
+      .pagina-oficina .imagen-contenedor {
+        height: 190px;
+      }
+
+      .pagina-oficina .encabezado {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
 </head>
-<body>
-  <h1 class="Titulo">Cosas de Oficina</h1>
- <button class="back" onclick="window.location.href='MenuProductos.html'">Regresar</button>
 
-  <div class="contenedor-tramites">
-    <div class="card">
-      <img src="Imagenes/hoja-blanca-tcarta-100hjs.jpg" alt="HojasBlanca" />
-      <p>Hojas Blancas</p>
-      <button class="button5">$1 Pesos</button>
-    </div>
-        <div class="card">
-      <img src="Imagenes/SobrePlastico.jpg" alt="SobrePlastico" />
-      <p>Sobre de Plastico</p>
-      <button class="button5">25 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/SobreManila.jpg" alt="SobreManila" />
-      <p>Sobre Manila</p>
-      <button>8 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Broche.png" alt="BrocheBaco" /> 
-      <p>Broche Baco</p>
-      <button>10 pesos</button>
-    </div>
-    <div class="card">
-      <img src="Imagenes/pagare.jpg" alt="Pagare" />
-      <p>Pagare</p>
-      <button>5 pesos</button>
-    </div>
-    <div class="card">
-        <img src="Imagenes/Recibodedinero.png" alt="Recibodedinero" />
-        <p>Recibo de Dinero</p>
-        <button>5 pesos</button>
-       </div>
-        <div class="card">
-        <img src="Imagenes/sobrededinero.jpg" alt="sobrededinero" />
-        <p>Sobre de Dinero</p>
-        <button>5 pesos</button>
-       </div>
-       </div>
+<body class="pagina-oficina">
 
-      <h1 class="parrafo">Contáctanos para más información</h1>
-      <div class="footer">
-        <p>© 2026 Papelería Untrac. Todos los derechos reservados.</p>
+  <header class="encabezado">
+    <a
+      class="marca"
+      href="presentacion.html"
+      aria-label="UNTRAC, menú principal"
+    >
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
+
+    <a class="regresar" href="MenuProductos.html">
+      <span aria-hidden="true">←</span>
+      Ver categorías
+    </a>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">ARTÍCULOS DE OFICINA</span>
+
+      <h1 id="titulo">
+        Organiza tu trabajo, <span>prepara tus ideas.</span>
+      </h1>
+
+      <p>
+        Hojas, sobres y formatos para tus documentos y pendientes.
+        Todos los precios están expresados en pesos mexicanos.
+      </p>
+    </section>
+
+    <div class="encabezado-catalogo">
+      <h2>Lo esencial para tu oficina</h2>
+      <span>7 productos en el catálogo</span>
+    </div>
+
+    <section class="catalogo" aria-label="Productos de oficina">
+
+      <!-- HOJAS BLANCAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/hoja-blanca-tcarta-100hjs.jpg"
+            alt="Hojas blancas"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">PAPEL</span>
+          <h3>Hojas blancas</h3>
+          <p class="precio">
+            <strong>$1</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- SOBRE DE PLÁSTICO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/SobrePlastico.jpg"
+            alt="Sobre de plástico"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ORGANIZACIÓN</span>
+          <h3>Sobre de plástico</h3>
+          <p class="precio">
+            <strong>$25</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- SOBRE MANILA -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/SobreManila.jpg"
+            alt="Sobre manila"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ORGANIZACIÓN</span>
+          <h3>Sobre manila</h3>
+          <p class="precio">
+            <strong>$8</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- BROCHE BACO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Broche.png"
+            alt="Broche Baco"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ARCHIVO</span>
+          <h3>Broche Baco</h3>
+          <p class="precio">
+            <strong>$10</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- PAGARÉ -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/pagare.jpg"
+            alt="Formato de pagaré"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">FORMATOS</span>
+          <h3>Pagaré</h3>
+          <p class="precio">
+            <strong>$5</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- RECIBO DE DINERO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Recibodedinero.png"
+            alt="Formato de recibo de dinero"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">FORMATOS</span>
+          <h3>Recibo de dinero</h3>
+          <p class="precio">
+            <strong>$5</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+      <!-- SOBRE DE DINERO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/sobrededinero.jpg"
+            alt="Sobre de dinero"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">SOBRES</span>
+          <h3>Sobre de dinero</h3>
+          <p class="precio">
+            <strong>$5</strong>
+            <span>MXN</span>
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <h2 id="titulo-ayuda">¿Necesitas surtir tu oficina?</h2>
+        <p>
+          Pregúntanos por las presentaciones y cantidades disponibles.
+        </p>
       </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

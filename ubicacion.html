@@ -3,51 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ubicación</title>
+
+  <title>Ubicación | Papelería UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
   <link rel="stylesheet" href="style6.css">
-
 </head>
+
 <body>
-  <h1>📍 Ubicación</h1>
-  <p class="subtitulo">Estamos ubicados en:</p>
-  <p class="direccion">Papelería UNTRAC, Tapachula<br>(7 Avenida Norte #74 Entre 13 y 15 calle Oriente)</p>
-  <button class="Back" onclick="window.location.href='presentacion.html'">Regresar</button>
-  <div class="local">
-    <div class="mapa">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.334021188121!2d-92.2584677!3d14.9113022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0ffc2b53d01b%3A0x76846e2ca8249870!2sPapeler%C3%ADa%20UNTRAC!5e0!3m2!1ses!2smx!4v1695560000000!5m2!1ses!2smx"  
-        allowfullscreen=""  
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
-    <button class="llegar" onclick="llegar()">🚗 Cómo llegar</button>
-  <script>
-function llegar() {
 
-  if (navigator.geolocation) {
+  <header class="encabezado">
+    <a
+      class="marca"
+      href="presentacion.html"
+      aria-label="UNTRAC, menú principal"
+    >
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
 
-    navigator.geolocation.getCurrentPosition(function(position) {
+    <a class="regresar" href="presentacion.html">
+      <span aria-hidden="true">←</span>
+      Regresar al menú
+    </a>
+  </header>
 
-      let lat = position.coords.latitude;
-      let lon = position.coords.longitude;
+  <main class="contenedor">
 
-      // Coordenadas de tu papelería
-      let destino = "14.911302816142273, -92.25582683508294";
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">ENCUÉNTRANOS EN TAPACHULA</span>
 
-      let url = "https://www.google.com/maps/dir/" + lat + "," + lon + "/" + destino;
+      <h1 id="titulo">
+        Estamos cerca de <span>tus ideas.</span>
+      </h1>
 
-      window.open(url, "_blank");
+      <p>
+        Visítanos para encontrar tus materiales,
+        imprimir tus documentos o consultar nuestros servicios.
+      </p>
+    </section>
 
-    }, function() {
-      alert("No se pudo obtener tu ubicación.");
-    });
+    <section class="ubicacion" aria-label="Dirección y mapa">
 
-  } else {
-    alert("Tu navegador no permite geolocalización.");
-  }
+      <div class="informacion">
 
-}
-</script>
+        <span class="icono-ubicacion" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"
+            />
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+        </span>
+
+        <span class="etiqueta">VEN A CONOCERNOS</span>
+        <h2>Papelería UNTRAC</h2>
+
+        <address class="direccion">
+          7.ª Avenida Norte #74<br>
+          Entre 13 y 15 Calle Oriente<br>
+          Tapachula, Chiapas
+        </address>
+
+        <div class="referencia">
+          <span class="referencia-titulo">Para ubicarte</span>
+          <p>
+            Nos encontramos sobre la 7.ª Avenida Norte,
+            entre las calles 13 y 15 Oriente.
+          </p>
+        </div>
+
+        <a
+          class="boton-principal"
+          href="https://www.google.com/maps/dir/?api=1&amp;destination=14.911302816142273%2C-92.25582683508294"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m21 3-7 18-4-7-7-4L21 3Z"/>
+            <path d="m10 14 11-11"/>
+          </svg>
+
+          Cómo llegar
+          <span aria-hidden="true">↗</span>
+          <span class="sr-only"> (abre Google Maps en otra pestaña)</span>
+        </a>
+
+        <p class="nota-mapa">
+          Elige tu punto de partida en Google Maps
+          para consultar la ruta.
+        </p>
+
+      </div>
+
+      <div class="mapa-tarjeta">
+        <div class="mapa-encabezado">
+          <h2>Nuestra ubicación</h2>
+          <span>Tapachula, Chiapas</span>
+        </div>
+
+        <iframe
+          class="mapa"
+          title="Mapa de Papelería UNTRAC en Tapachula"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.334021188121!2d-92.2584677!3d14.9113022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858e0ffc2b53d01b%3A0x76846e2ca8249870!2sPapeler%C3%ADa%20UNTRAC!5e0!3m2!1ses!2smx!4v1695560000000!5m2!1ses!2smx"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <div class="mapa-pie">
+          <span aria-hidden="true">↗</span>
+          Usa “Cómo llegar” para abrir las indicaciones.
+        </div>
+      </div>
+
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <h2 id="titulo-ayuda">¿Tienes alguna duda antes de venir?</h2>
+        <p>
+          Contáctanos para consultar productos,
+          servicios y disponibilidad.
+        </p>
+      </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>

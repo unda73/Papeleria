@@ -1,87 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="style8.css">
-</head>
-<body>
-     <h1 class="Titulo">Productos</h1>
-  <h2 class="subtitulo">¿Qué Producto Deseas?</h2>
-  <button class="back" onclick="window.location.href='MenuProductos.html'">Regresar</button>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <div class="contenedor-tramites">
-    <div class="card">
-      <a href="https://mpago.la/2fqFadU" target="_blank">
-      <img src="Imagenes/Cartulinas.jpeg" alt="Cartulina" />
+  <title>Papelería | Productos UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style8.css">
+</head>
+
+<body>
+
+  <header class="encabezado">
+    <a class="marca" href="presentacion.html" aria-label="UNTRAC, menú principal">
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
+
+    <a class="regresar" href="MenuProductos.html">
+      <span aria-hidden="true">←</span>
+      Ver categorías
+    </a>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">PAPELERÍA UNTRAC</span>
+
+      <h1 id="titulo">
+        Todo empieza con <span>una buena idea.</span>
+      </h1>
+
+      <p>
+        Encuentra materiales para escribir, crear y organizar
+        tus tareas y proyectos.
+      </p>
+    </section>
+
+    <div class="encabezado-catalogo">
+      <h2>Artículos de papelería</h2>
+      <span>16 productos en el catálogo</span>
+    </div>
+
+    <section class="catalogo" aria-label="Productos de papelería">
+
+      <!-- CARTULINAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Cartulinas.jpeg"
+            alt="Cartulinas"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">PAPEL Y MATERIALES</span>
+          <h3>Cartulinas</h3>
+
+          <a
+            class="accion accion-pago"
+            href="https://mpago.la/2fqFadU"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pagar con Mercado Pago
+            <span class="sr-only">cartulinas, abre en otra pestaña</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- PAPEL BOND -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/PapelBond.jpg" alt="Papel bond" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">PAPEL Y MATERIALES</span>
+          <h3>Papel bond</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">papel bond</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SUPER GLUE -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/SuperGlue.png" alt="Super Glue" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ADHESIVOS</span>
+          <h3>Super Glue</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">Super Glue</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- LAPICEROS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Lapiceros.jpeg" alt="Lapiceros" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ESCRITURA</span>
+          <h3>Lapiceros</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">lapiceros</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- LÁPICES -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Lapices.jpg" alt="Lápices" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ESCRITURA</span>
+          <h3>Lápices</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">lápices</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- FÓLDERES -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Folder.jpg" alt="Fólderes" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ORGANIZACIÓN</span>
+          <h3>Fólderes</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">fólderes</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SOBRES MANILA -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/SobreManila.jpg"
+            alt="Sobres manila tamaño carta u oficio"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ORGANIZACIÓN</span>
+          <h3>Sobres manila carta u oficio</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">sobres manila</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SOBRES DE PLÁSTICO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/SobrePlastico.jpg"
+            alt="Sobres de plástico"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ORGANIZACIÓN</span>
+          <h3>Sobres de plástico</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">sobres de plástico</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SACAPUNTAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Sacapuntas.jpeg" alt="Sacapuntas" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ÚTILES ESCOLARES</span>
+          <h3>Sacapuntas</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">sacapuntas</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- HOJAS DE COLORES -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Patel.jpg"
+            alt="Hojas de colores"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">PAPEL Y MATERIALES</span>
+          <h3>Hojas de colores</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">hojas de colores</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- LIBRETAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/libreta.jpg" alt="Libretas" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ÚTILES ESCOLARES</span>
+          <h3>Libretas</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">libretas</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- PEGAMENTO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Resistol.png" alt="Pegamento" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ADHESIVOS</span>
+          <h3>Pegamento</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">pegamento</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- COLORES -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Colores.png" alt="Colores" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ARTE Y CREATIVIDAD</span>
+          <h3>Colores</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">colores</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- PINTURAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img src="Imagenes/Pintura.png" alt="Pinturas" loading="lazy">
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ARTE Y CREATIVIDAD</span>
+          <h3>Pinturas</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">pinturas</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- SOLICITUD DE EMPLEO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/SolicitudEmpleo.jpg"
+            alt="Formato de solicitud de empleo"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">FORMATOS</span>
+          <h3>Solicitud de empleo</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">solicitud de empleo</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- CARTA PODER -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/carta-poder.jpg"
+            alt="Formato de carta poder"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">FORMATOS</span>
+          <h3>Carta poder</h3>
+          <a class="accion" href="Contactanos.html">
+            Consultar producto
+            <span class="sr-only">carta poder</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <h2 id="titulo-ayuda">¿Ya tienes tu lista de útiles?</h2>
+        <p>Contáctanos para consultar precios, presentaciones y disponibilidad.</p>
+      </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
       </a>
-      <p>Cartulinas</p>
-    </div>
-        <div class="card">
-      <img src="Imagenes/PapelBond.jpg" alt="Papel Bond" />
-      <p>Papel Bond</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/SuperGlue.png" alt="Super Glue" />
-      <p>Super Glue</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Lapiceros.jpeg" alt="Lapiceros" />
-      <p>Lapiceros</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Lapices.jpg" alt="Lapices" />
-      <p>Lapices</p>
-    </div>
-        <div class="card">
-      <img src="Imagenes/Folder.jpg" alt="Folder" />
-      <p>Folder</p>
-    </div>
-    <div class="card">
-        <img src="Imagenes/SobreManila.jpg" alt="Sobres Manila Cartas o Oficio" />
-        <p>Sobres Manila Cartas o Oficio</p>
-       </div>
-          <div class="card">
-        <img src="Imagenes/SobrePlastico.jpg" alt="Sobre de Plástico" />
-        <p>Sobre de Plástico</p>
-       </div>
-            <div class="card">
-        <img src="Imagenes/Sacapuntas.jpeg" alt="Sacapuntas" />
-        <p>Sacapuntas</p>
-       </div>
-              <div class="card">
-           <img src="Imagenes/Patel.jpg" alt="Hojas de Colores" />
-           <p>Hojas de Colores</p>
-              </div>
-        <div class="card">
-           <img src="Imagenes/libreta.jpg" alt="Libretas" />
-           <p>Libretas</p>
-              </div>
-        <div class="card">
-           <img src="Imagenes/Resistol.png" alt="Pegamento" />
-           <p>Pegamento</p>
-              </div>
-        <div class="card">
-           <img src="Imagenes/Colores.png" alt="Colores" />
-           <p>Colores</p>
-              </div>
-        <div class="card">
-           <img src="Imagenes/Pintura.png" alt="Pinturas" />
-           <p>Pinturas</p>
-              </div>
-        <div class="card">
-          <img src="Imagenes/SolicitudEmpleo.jpg" alt="Solicitud de Empleo"/>
-          <p>Solicitud de Empleo</p>
-        </div>
-          <div class="card">
-          <img src="Imagenes/carta-poder.jpg" alt="Carta Poder"/>
-          <p>Carta Poder</p>
-        </div>
-       </div>
-  <H1 class="parrafo">Contáctanos para más información</H1>
- <div class="footer">
-    <p>© 2026 Papelería Untrac. Todos los derechos reservados.</p>
-  </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>

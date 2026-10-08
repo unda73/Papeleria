@@ -1,47 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contáctanos</title>
-<link rel="stylesheet" href="style4.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Contáctanos | Papelería UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style4.css">
 </head>
 
 <body>
 
-<button class="button1" onclick="location.href='presentacion.html'">Atrás</button>
+  <header class="encabezado">
+    <a
+      class="marca"
+      href="presentacion.html"
+      aria-label="UNTRAC, menú principal"
+    >
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
 
-<h1 class="Titulo">CONTÁCTANOS</h1>
+    <a class="regresar" href="presentacion.html">
+      <span aria-hidden="true">←</span>
+      Regresar al menú
+    </a>
+  </header>
 
-<p class="parrafo">
-Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
-</p>
+  <main class="contenedor">
 
-<div class="contact-info">
-    <h2>Horario</h2>
-    <p><strong>Lunes a Viernes:</strong> 08:00 AM - 10:00 PM</p>
-    <p><strong>Sábado y Domingo:</strong> 08:00 AM - 10:00 PM</p>
-</div>
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">CONTACTO UNTRAC</span>
 
-<!-- WhatsApp -->
-<a href="https://api.whatsapp.com/send?phone=529625163928&text=¿Todavía disponible?" 
-class="float whatsapp-float pulse" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
+      <h1 id="titulo">
+        Cuéntanos, <span>¿qué necesitas?</span>
+      </h1>
 
-<!-- Facebook -->
-<a href="https://www.facebook.com/" 
-class="float facebook-float pulse" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
+      <p>
+        Pregunta por nuestros productos, consulta un servicio
+        o cuéntanos sobre el trabajo que tienes en mente.
+      </p>
+    </section>
 
-<!-- Instagram -->
-<a href="https://www.instagram.com/" 
-class="float instagram-float pulse" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
+    <section class="contacto-grid" aria-label="Opciones de contacto">
+
+      <!-- CONTACTO PRINCIPAL -->
+      <article class="tarjeta contacto-principal">
+
+        <span class="icono icono-verde" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H5l-3 2v-9.5A9.5 9.5 0 0 1 11.5 3h1a8.5 8.5 0 0 1 8.5 8.5Z"
+            />
+            <path d="M7 10h9M7 14h6"/>
+          </svg>
+        </span>
+
+        <span class="etiqueta etiqueta-verde">HABLEMOS POR WHATSAPP</span>
+
+        <h2>Estamos para ayudarte.</h2>
+
+        <p class="descripcion">
+          Escríbenos para consultar precios, disponibilidad
+          y detalles de nuestros servicios.
+        </p>
+
+        <p class="telefono">962 516 3928</p>
+
+        <a
+          class="boton boton-whatsapp"
+          href="https://wa.me/529625163928?text=Hola%2C%20Papeler%C3%ADa%20UNTRAC.%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20productos%20y%20servicios."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Escribir por WhatsApp
+          <span aria-hidden="true">↗</span>
+          <span class="sr-only"> (abre en otra pestaña)</span>
+        </a>
+
+        <a class="enlace-llamada" href="tel:+529625163928">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"
+            />
+          </svg>
+
+          También puedes llamarnos
+        </a>
+
+      </article>
+
+      <!-- HORARIO -->
+      <article class="tarjeta horario">
+
+        <span class="icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M12 7v5l3 2"/>
+          </svg>
+        </span>
+
+        <span class="etiqueta">PLANEA TU VISITA</span>
+        <h2>Horario de atención</h2>
+
+        <dl class="lista-horarios">
+          <div>
+            <dt>Lunes a viernes</dt>
+            <dd>8:00 a. m. – 10:00 p. m.</dd>
+          </div>
+
+          <div>
+            <dt>Sábado y domingo</dt>
+            <dd>8:00 a. m. – 10:00 p. m.</dd>
+          </div>
+        </dl>
+
+        <div class="nota">
+          <span class="punto" aria-hidden="true"></span>
+          Te esperamos en Papelería UNTRAC.
+        </div>
+
+      </article>
+
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="visitanos" aria-labelledby="titulo-visita">
+      <div>
+        <span class="etiqueta">TAMBIÉN PUEDES VISITARNOS</span>
+        <h2 id="titulo-visita">Estamos en Tapachula</h2>
+
+        <address>
+          7.ª Avenida Norte #74, entre 13 y 15 Calle Oriente.<br>
+          Tapachula, Chiapas.
+        </address>
+      </div>
+
+      <a class="boton boton-azul" href="ubicacion.html">
+        Ver ubicación
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <!--
+      REDES SOCIALES:
+      Sustituye los valores de href por las URL reales de UNTRAC.
+      Después elimina este comentario para mostrar la sección.
+
+      <nav class="redes" aria-label="Redes sociales">
+        <a
+          href="URL_REAL_DE_FACEBOOK"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+          <span class="sr-only"> (abre en otra pestaña)</span>
+        </a>
+
+        <a
+          href="URL_REAL_DE_INSTAGRAM"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+          <span class="sr-only"> (abre en otra pestaña)</span>
+        </a>
+      </nav>
+    -->
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

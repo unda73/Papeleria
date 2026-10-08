@@ -1,60 +1,288 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trámites</title>
-  <link rel="stylesheet" href="style7.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Servicios | Papelería UNTRAC</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="Sin título (1) (1).png"
+  >
+
+  <link rel="stylesheet" href="style7.css">
 </head>
+
 <body>
-  <h1 class="Titulo">Servicios</h1>
-  <h2 class="subtitulo">Tipos de Servicios</h2>
-  <button class="back" onclick="window.location.href='presentacion.html'">Regresar</button>
 
-  <div class="contenedor-tramites">
-    <div class="card">
-      <img src="Imagenes/Activar-Office-2021.jpg" alt="Activación de Microsoft Office" />
-      <p>Activación de Microsoft Office</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Blue Curve.jpg" alt="Diseño e impresión de invitaciones, tarjetas y volantes" />
-      <p>Diseño e impresión de invitaciones, tarjetas y volantes</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/createscantopdf_0.png" alt="Escaneo a PDF" />
-      <p>Escaneo a PDF</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/elabo.jpg" alt="Elaboracion de documentos" />
-      <p>Elaboracion de documentos</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/ico-impresion-lg.png" alt="Copias e Impresiones" />
-      <p>Copias e Impresiones</p>
-    </div>
-    <div class="card">
-      <img src="Imagenes/Captura desde 2025-09-25 09-58-46.png" alt="Recargas Telefónicas" />
-      <p>Recargas Telefónicas</p>
-    </div>
-       <div class="card">
-      <img src="Imagenes/Curriculum hombre Profesional con fotografia diseño moderno azul.png" alt="Elaboracion de Curriculum" />
-      <p>Elaboracion de Curriculum</p>
+  <header class="encabezado">
+    <a class="marca" href="presentacion.html" aria-label="UNTRAC, menú principal">
+      <span class="marca-nombre">UNTRAC<span>.</span></span>
+      <span class="marca-descripcion">PAPELERÍA Y SERVICIOS</span>
+    </a>
+
+    <a class="regresar" href="presentacion.html">
+      <span aria-hidden="true">←</span>
+      Regresar al menú
+    </a>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="introduccion" aria-labelledby="titulo">
+      <span class="etiqueta">SERVICIOS UNTRAC</span>
+
+      <h1 id="titulo">
+        Dale forma a <span>tus proyectos.</span>
+      </h1>
+
+      <p>
+        Imprime, diseña y prepara tus documentos con nosotros.
+        Encuentra el servicio que necesitas para la escuela,
+        el trabajo o tu negocio.
+      </p>
+    </section>
+
+    <div class="encabezado-catalogo">
+      <h2>¿En qué podemos ayudarte?</h2>
+      <span>9 servicios disponibles</span>
     </div>
 
-          <div class="card">
-      <img src="Imagenes/engargolado.jpeg" alt="Engargolados"/>
-      <p>Engargolados</p>
-  </div>
+    <section class="catalogo" aria-label="Catálogo de servicios">
 
-  <div class="card">
-      <img src="Imagenes/Enmicados.png" alt="Enmicados"/>
-      <p>Enmicados</p>
-  </div>
-  </div>
+      <!-- MICROSOFT OFFICE -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Activar-Office-2021.jpg"
+            alt="Microsoft Office"
+            loading="lazy"
+          >
+        </div>
 
-  <h1 class="parrafo">Contáctanos para más información</h1>
-  <div class="footer">
-    <p>© 2026 Papelería Untrac. Todos los derechos reservados.</p>
-  </div>
+        <div class="tarjeta-contenido">
+          <span class="categoria">SOFTWARE</span>
+          <h3>Activación de Microsoft Office</h3>
+          <p>Consulta nuestro servicio de apoyo para activar Microsoft Office.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de activación de Microsoft Office</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- DISEÑO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Blue Curve.jpg"
+            alt="Ejemplo de diseño gráfico"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">DISEÑO E IMPRESIÓN</span>
+          <h3>Invitaciones, tarjetas y volantes</h3>
+          <p>Diseño e impresión para tus eventos, proyectos y negocio.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de invitaciones, tarjetas y volantes</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ESCANEO -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/createscantopdf_0.png"
+            alt="Digitalización de documentos a PDF"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">DIGITALIZACIÓN</span>
+          <h3>Escaneo a PDF</h3>
+          <p>Convierte tus documentos en archivos digitales para guardarlos o enviarlos.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de escaneo a PDF</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- DOCUMENTOS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/elabo.jpg"
+            alt="Elaboración de documentos"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">DOCUMENTOS</span>
+          <h3>Elaboración de documentos</h3>
+          <p>Apoyo con la redacción y el formato de tus escritos y trabajos en Word.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de elaboración de documentos</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- COPIAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/ico-impresion-lg.png"
+            alt="Copias e impresiones"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">IMPRESIÓN</span>
+          <h3>Copias e impresiones</h3>
+          <p>Tus tareas, archivos y documentos impresos para cuando los necesites.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de copias e impresiones</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- RECARGAS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Captura desde 2025-09-25 09-58-46.png"
+            alt="Recargas telefónicas"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">TELEFONÍA</span>
+          <h3>Recargas telefónicas</h3>
+          <p>Consulta las compañías y los montos disponibles para tu recarga.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de recargas telefónicas</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- CURRÍCULUM -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Curriculum hombre Profesional con fotografia diseño moderno azul.png"
+            alt="Ejemplo de diseño de currículum"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">PRESENTACIÓN PROFESIONAL</span>
+          <h3>Elaboración de currículum</h3>
+          <p>Presenta tu experiencia, estudios y habilidades de forma clara y ordenada.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de elaboración de currículum</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ENGARGOLADOS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/engargolado.jpeg"
+            alt="Ejemplo de trabajo engargolado"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ACABADOS</span>
+          <h3>Engargolados</h3>
+          <p>Organiza tus apuntes, tareas y proyectos en un solo documento.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de engargolados</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ENMICADOS -->
+      <article class="tarjeta">
+        <div class="imagen-contenedor">
+          <img
+            src="Imagenes/Enmicados.png"
+            alt="Ejemplo de enmicado"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tarjeta-contenido">
+          <span class="categoria">ACABADOS</span>
+          <h3>Enmicados</h3>
+          <p>Protege tus materiales impresos del desgaste por el uso diario.</p>
+
+          <a class="consultar" href="Contactanos.html">
+            Consultar servicio
+            <span class="sr-only">de enmicados</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="ayuda" aria-labelledby="titulo-ayuda">
+      <div>
+        <span class="etiqueta">CUÉNTANOS TU IDEA</span>
+        <h2 id="titulo-ayuda">¿Tienes un trabajo en mente?</h2>
+        <p>
+          Contáctanos para consultar precios, opciones
+          y tiempos de entrega.
+        </p>
+      </div>
+
+      <a class="boton-contacto" href="Contactanos.html">
+        Contáctanos
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-marca">PAPELERÍA UNTRAC</span>
+    <p>© 2026 UNTRAC. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
